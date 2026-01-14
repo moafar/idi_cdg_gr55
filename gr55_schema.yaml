@@ -1,0 +1,393 @@
+columns:
+  - index: 0
+    name_original: "Classe de cost"
+    name_technic: "classe_cost"
+    type: int
+
+  - index: 1
+    name_original: "Denom.classes cost"
+    name_technic: "denom_classes_cost"
+    type: string
+
+  - index: 2
+    name_original: "Valor/Mon.soc."
+    name_technic: "valor_mon_soc"
+    type: float
+
+  - index: 3
+    name_original: "Qtat.total registr."
+    name_technic: "qtat_total_registr"
+    type: int
+
+  - index: 4
+    name_original: "Un.mesura comptab."
+    name_technic: "unitat_mesura_comptable"
+    type: string
+
+  - index: 5
+    name_original: "Classe compte contrapartida"
+    name_technic: "classe_compte_contrapartida"
+    type: string
+
+  - index: 6
+    name_original: "Cte.contrapartida"
+    name_technic: "compte_contrapartida"
+    type: string
+
+  - index: 7
+    name_original: "Denom.compte contrapartia"
+    name_technic: "denom_compte_contrapartida"
+    type: string
+
+  - index: 8
+    name_original: "Anul·lat"
+    name_technic: "anullat"
+    type: string
+
+  - index: 9
+    name_original: "Assignació"
+    name_technic: "assignacio"
+    type: int
+
+  - index: 10
+    name_original: "Centre"
+    name_technic: "centre"
+    type: string
+
+  - index: 11
+    name_original: "Centre de cost"
+    name_technic: "centre_cost"
+    type: int
+
+  - index: 12
+    name_original: "Classe d'objecte"
+    name_technic: "classe_objecte_1"
+    type: string
+
+  - index: 13
+    name_original: "Classe d'objecte"
+    name_technic: "classe_objecte_2"
+    type: string
+
+  - index: 14
+    name_original: "Classe de document"
+    name_technic: "classe_document"
+    type: string
+
+  - index: 15
+    name_original: "Clau de referència"
+    name_technic: "clau_referencia"
+    type: string
+
+  - index: 16
+    name_original: "Dat.comptabilització"
+    name_technic: "data_comptabilitzacio"
+    type: datetime
+    format: "%d/%m/%Y"
+
+  - index: 17
+    name_original: "Data d'entrada"
+    name_technic: "data_entrada"
+    type: datetime
+    format: "%d/%m/%Y"
+
+  - index: 18
+    name_original: "Data document"
+    name_technic: "data_document"
+    type: datetime
+    format: "%d/%m/%Y"
+
+  - index: 19
+    name_original: "Data valor"
+    name_technic: "data_valor"
+    type: datetime
+    format: "%d/%m/%Y"
+
+  - index: 20
+    name_original: "Denominació"
+    name_technic: "denominacio"
+    type: string
+
+  - index: 21
+    name_original: "Denominació objecte"
+    name_technic: "denominacio_objecte"
+    type: string
+
+  - index: 22
+    name_original: "Descripció cl.cost"
+    name_technic: "descripcio_cl_cost"
+    type: string
+
+  - index: 23
+    name_original: "Descripció cte.contrapartida"
+    name_technic: "descripcio_cte_contrapartida"
+    type: string
+
+  - index: 24
+    name_original: "Document anul·lació"
+    name_technic: "document_anullacio"
+    type: string
+
+  - index: 25
+    name_original: "Exercici"
+    name_technic: "exercici"
+    type: int
+
+  - index: 26
+    name_original: "Exercici referència"
+    name_technic: "exercici_referencia"
+    type: int
+
+  - index: 27
+    name_original: "Imputació auxiliar_1"
+    name_technic: "imputacio_auxiliar_1"
+    type: string
+
+  - index: 28
+    name_original: "Ind.càrrec/abonament"
+    name_technic: "indicador_carrec_abonament"
+    type: string
+
+  - index: 29
+    name_original: "Ledger"
+    name_technic: "ledger"
+    type: int
+
+  - index: 30
+    name_original: "Lín.en vers.operat."
+    name_technic: "linia_versio_operativa"
+    type: int
+
+  - index: 31
+    name_original: "Línia comptab.compt."
+    name_technic: "linia_comptable"
+    type: int
+
+  - index: 32
+    name_original: "Material"
+    name_technic: "material"
+    type: string
+
+  - index: 33
+    name_original: "Mon.so.CO"
+    name_technic: "moneda_soc_co"
+    type: string
+
+  - index: 34
+    name_original: "Moneda d'objecte"
+    name_technic: "moneda_objecte"
+    type: string
+
+  - index: 35
+    name_original: "Moneda informe"
+    name_technic: "moneda_informe"
+    type: string
+
+  - index: 36
+    name_original: "Moneda transacció"
+    name_technic: "moneda_transaccio"
+    type: string
+
+  - index: 37
+    name_original: "Nº ref.anul·lació"
+    name_technic: "num_ref_anullacio"
+    type: int
+
+  - index: 38
+    name_original: "Nom d'usuari"
+    name_technic: "nom_usuari"
+    type: string
+
+  - index: 39
+    name_original: "Núm.doc.referència"
+    name_technic: "num_doc_referencia"
+    type: int
+
+  - index: 40
+    name_original: "Núm.soc.GL interl."
+    name_technic: "num_soc_gl_interl"
+    type: int
+
+  - index: 41
+    name_original: "Número d'objecte PA"
+    name_technic: "num_objecte_pa"
+    type: int
+
+  - index: 42
+    name_original: "Número de document"
+    name_technic: "num_document"
+    type: string
+
+  - index: 43
+    name_original: "Objecte"
+    name_technic: "objecte"
+    type: string
+
+  - index: 44
+    name_original: "Op.referència"
+    name_technic: "op_referencia"
+    type: string
+
+  - index: 45
+    name_original: "Operació"
+    name_technic: "operacio"
+    type: string
+
+  - index: 46
+    name_original: "Operació original"
+    name_technic: "operacio_original"
+    type: string
+
+  - index: 47
+    name_original: "Període"
+    name_technic: "periode"
+    type: int
+
+  - index: 48
+    name_original: "Període a"
+    name_technic: "periode_a"
+    type: int
+
+  - index: 49
+    name_original: "Període de"
+    name_technic: "periode_de"
+    type: int
+
+  - index: 50
+    name_original: "Pos.document"
+    name_technic: "pos_document_1"
+    type: int
+
+  - index: 51
+    name_original: "Pos.document"
+    name_technic: "pos_document_2"
+    type: int
+
+  - index: 52
+    name_original: "Hora d'entrada"
+    name_technic: "hora_entrada"
+    type: time
+    format: "%H:%M:%S"
+
+  - index: 53
+    name_original: "Societat"
+    name_technic: "societat"
+    type: string
+
+  - index: 54
+    name_original: "Societat referència"
+    name_technic: "societat_referencia"
+    type: string
+
+  - index: 55
+    name_original: "Temps inserció"
+    name_technic: "temps_insercio"
+    type: timestamp
+    unit: ms
+    scale: 10
+    tz: UTC
+
+  - index: 56
+    name_original: "Text"
+    name_technic: "text"
+    type: string
+
+  - index: 57
+    name_original: "Text breu material"
+    name_technic: "text_breu_material"
+    type: string
+
+  - index: 58
+    name_original: "Text breu Ordre CO"
+    name_technic: "text_breu_ordre_co"
+    type: string
+
+  - index: 59
+    name_original: "Txt.capç.doc."
+    name_technic: "text_capcalera_doc"
+    type: string
+
+  - index: 60
+    name_original: "Text llarg material"
+    name_technic: "text_llarg_material"
+    type: string
+
+  - index: 61
+    name_original: "Tipus de càrrec"
+    name_technic: "tipus_carrec"
+    type: int
+
+  - index: 62
+    name_original: "Tipus de cotització"
+    name_technic: "tipus_cotitzacio"
+    type: string
+
+  - index: 63
+    name_original: "Tipus de valor"
+    name_technic: "tipus_valor"
+    type: int
+
+  - index: 64
+    name_original: "Tipus doc.referència"
+    name_technic: "tipus_doc_referencia"
+    type: string
+
+  - index: 65
+    name_original: "Unitat organitz.ref."
+    name_technic: "unitat_organitz_ref"
+    type: string
+
+  - index: 66
+    name_original: "Val.var./Mon.obj."
+    name_technic: "val_var_mon_obj"
+    type: float
+
+  - index: 67
+    name_original: "Val.var./Mon.Trans."
+    name_technic: "val_var_mon_trans"
+    type: float
+
+  - index: 68
+    name_original: "Val.var./Mon.informe"
+    name_technic: "val_var_mon_informe"
+    type: float
+
+  - index: 69
+    name_original: "Val.var./Mon.soc.CO"
+    name_technic: "val_var_mon_soc_co"
+    type: float
+
+  - index: 70
+    name_original: "Valor/Mon.soc.CO"
+    name_technic: "valor_mon_soc_co"
+    type: float
+
+  - index: 71
+    name_original: "Valor/Moneda objecte"
+    name_technic: "valor_moneda_objecte"
+    type: float
+
+  - index: 72
+    name_original: "Valor/moneda trans."
+    name_technic: "valor_moneda_trans"
+    type: float
+
+  - index: 73
+    name_original: "Versió"
+    name_technic: "versio"
+    type: int
+
+  - index: 74
+    name_original: "cod. Material sin f"
+    name_technic: "cod_material_sin_f"
+    type: string
+
+  - index: 75
+    name_original: "linea act."
+    name_technic: "linea_act"
+    type: string
+
+  - index: 76
+    name_original: "ceco"
+    name_technic: "ceco"
+    type: int
