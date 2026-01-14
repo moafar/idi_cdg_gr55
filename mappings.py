@@ -1,5 +1,6 @@
 # mappings.py
 
+#Extraídos del archivo 'Facturació Nov 25.XLSX' enviado por Florencia el 14/01/2026
 CODIGO_MODALIDAD = {
     'MN00003':'medicina nuclear',
     'MN00004':'medicina nuclear',

@@ -105,6 +105,31 @@ def _add_linea_actividad(df: pd.DataFrame) -> pd.DataFrame:
     return df
 
 
+def _safe_for_excel(df: pd.DataFrame) -> pd.DataFrame:
+    """Preparar el DataFrame para exportación segura a Excel.
+    
+    Aplica las siguientes transformaciones:
+    - Elimina timezones de columnas datetime (Excel no los soporta)
+    - Convierte objetos time a string (Excel no soporta time sin fecha)
+    """
+    import datetime
+    
+    for col in df.columns:
+        # Eliminar timezone de columnas datetime
+        if pd.api.types.is_datetime64_any_dtype(df[col]):
+            if hasattr(df[col].dtype, 'tz') and df[col].dtype.tz is not None:
+                df[col] = df[col].dt.tz_localize(None)
+        
+        # Convertir time objects a string (Excel no los soporta nativamente)
+        elif df[col].dtype == 'object':
+            # Verificar si contiene objetos time
+            sample = df[col].dropna().head(1)
+            if len(sample) > 0 and isinstance(sample.iloc[0], datetime.time):
+                df[col] = df[col].astype(str)
+    
+    return df
+
+
 def transform_dataframe(df: pd.DataFrame) -> pd.DataFrame:
     """Aplicar transformaciones adicionales al DataFrame.
 
@@ -115,8 +140,9 @@ def transform_dataframe(df: pd.DataFrame) -> pd.DataFrame:
     df = _add_ceco_column(df)
     df = _add_cod_material_sinf_column(df)
     df = _add_linea_actividad(df)
-
-    print(df[["centre_cost", "ceco", "material", "cod_material_sinf", "linea_actividad"]].sample(10))
+    
+    # Transformación final: preparar para Excel
+    df = _safe_for_excel(df)
 
     return df
 
@@ -133,5 +159,6 @@ if __name__ == "__main__":
 
     df = pd.read_excel(args.input_path, sheet_name=args.sheet, dtype=str)
     df_typed = apply_schema_by_index(df, args.schema)
-    transform_dataframe(df_typed)
+    df_transformed = transform_dataframe(df_typed)
+    df_transformed.to_excel("output.xlsx", index=False)
     print("terminado")

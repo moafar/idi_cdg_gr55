@@ -83,25 +83,25 @@ columns:
     name_original: "Dat.comptabilització"
     name_technic: "data_comptabilitzacio"
     type: datetime
-    format: "%d/%m/%Y"
+    format: "%Y-%m-%d %H:%M:%S"
 
   - index: 17
     name_original: "Data d'entrada"
     name_technic: "data_entrada"
     type: datetime
-    format: "%d/%m/%Y"
+    format: "%Y-%m-%d %H:%M:%S"
 
   - index: 18
     name_original: "Data document"
     name_technic: "data_document"
     type: datetime
-    format: "%d/%m/%Y"
+    format: "%Y-%m-%d %H:%M:%S"
 
   - index: 19
     name_original: "Data valor"
     name_technic: "data_valor"
     type: datetime
-    format: "%d/%m/%Y"
+    format: "%Y-%m-%d %H:%M:%S"
 
   - index: 20
     name_original: "Denominació"
@@ -375,19 +375,4 @@ columns:
   - index: 73
     name_original: "Versió"
     name_technic: "versio"
-    type: int
-
-  - index: 74
-    name_original: "cod. Material sin f"
-    name_technic: "cod_material_sin_f"
-    type: string
-
-  - index: 75
-    name_original: "linea act."
-    name_technic: "linea_act"
-    type: string
-
-  - index: 76
-    name_original: "ceco"
-    name_technic: "ceco"
     type: int
