@@ -1,0 +1,4 @@
+# Ignorar carpetas generadas/entornos locales
+exports/
+.venv/
+__pycache__/
